@@ -1,0 +1,34 @@
+{
+    "ancestry": [
+        "Android",
+        "Astrazoan",
+        "Barathu",
+        "Contemplative",
+        "Dragonkin",
+        "Human",
+        "Ikeshti",
+        "Kalo",
+        "Kasatha",
+        "Lashunta",
+        "Pahtra",
+        "Sarcesian",
+        "Shirren",
+        "Shobhad",
+        "Skittermander",
+        "Vesk",
+        "Vlaka",
+        "Ysoki",
+        "Khizar"
+    ],
+
+    "attitude": [
+        "Helpful",
+        "Friendly",
+        "Indifferent",
+        "Unfriendly"
+    ],
+
+    "detail": [
+        "tbd"
+    ]
+}
