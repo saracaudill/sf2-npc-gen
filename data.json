@@ -1,4 +1,5 @@
 {
+
     "ancestry": [
         "Android",
         "Astrazoan",
@@ -29,6 +30,152 @@
     ],
 
     "detail": [
-        "tbd"
-    ]
+    {
+        "text": "Has malfunctioning {{link}}.",
+        "linkText": "moodskin",
+        "url": "https://2e.aonsrd.com/treasure/143-moodskin"
+    },
+    {
+        "text": "Has more prosthetic limbs than real ones."
+    },
+    {
+        "text": "Is covered in tattoos of city names from across the Pact Worlds."
+    },
+    {
+        "text": "Flaunts an entirely bedazzled outfit."
+    },
+    {
+        "text": "Constantly fidgets."
+    },
+    {
+        "text": "Leans heavily on a rusty painglaive."
+    },
+    {
+        "text": "Wears a frag grenade on a leather cord around their neck."
+    },
+    {
+        "text": "Doesn't look up from their comm unit while speaking."
+    },
+    {
+        "text": "Speaks with a thick Akitonian accent."
+    },
+    {
+        "text": "Has a {{link}} embedded in the center of their forehead.",
+        "linkText": "laser eye",
+        "url": "https://2e.aonsrd.com/treasure/122"
+    },
+    {
+        "text": "Makes intense eye contact."
+    },
+    {
+        "text": "Flips through a brochure for a beach resort on {{link}}.",
+        "linkText": "Varturan",
+        "url": "https://starfinderwiki.com/wiki/Varturan"
+    },
+    {
+        "text": "Shouts over their loud music that they don't turn down."
+    },
+    {
+        "text": "Has a truly remarkable number of piercings."
+    },
+    {
+        "text": "Drinks from a mug that says, \"Don't talk to me until I've had my coffee\"."
+    },
+    {
+        "text": "Talks with their hands (or equivalent limbs)."
+    },
+    {
+        "text": "Fiddles with a key ring filled with keys."
+    },
+    {
+        "text": "Reeks of hyperleaf."
+    },
+    {
+        "text": "Chews a big wad of bubblegum."
+    },
+    {
+        "text": "Is a close-talker."
+    },
+    {
+        "text": "Keeps checking their watch."
+    },
+    {
+        "text": "Speaks and moves slowly, as if they're wading through molasses."
+    },
+    {
+        "text": "Seems like they've seen some shit."
+    },
+    {
+        "text": "Carries a worn book with dog-eared pages."
+    },
+    {
+        "text": "Wears a baffling array of holy symbols."
+    },
+    {
+        "text": "Is really into Vesk metal."
+    },
+    {
+        "text": "Fears that everyone around them is slowly being replaced with reptoids."
+    },
+    {
+        "text": "Has recently been on a lot of unsuccessful first dates."
+    },
+    {
+        "text": "Has a micromanaging boss."
+    },
+    {
+        "text": "Has a very large family."
+    },
+    {
+        "text": "Dreams of seeing a colossi on {{link}}.",
+        "linkText": "Daimalko",
+        "url": "https://www.aonsrd.com/Systems.aspx?ItemName=Daimalko"
+    },
+    {
+        "text": "Thinks they are a witchwarper."
+    },
+    {
+        "text": "Knows Kasathan battledancing."
+    },
+    {
+        "text": "Is stressed about their midterm exams."
+    },
+    {
+        "text": "Is in a petty squabble with their neighbor."
+    },
+    {
+        "text": "Has a weakness for greasy diner food."
+    },
+    {
+        "text": "Thinks they are being watched."
+    },
+    {
+        "text": "Is very blunt."
+    },
+    {
+        "text": "Has gorgeous eyes."
+    },
+    {
+        "text": "Has an overbearing parent."
+    },
+    {
+        "text": "Has a giant tattoo of a void dragon."
+    },
+    {
+        "text": "Has a booming voice."
+    },
+    {
+        "text": "Is very sleepy."
+    },
+    {
+        "text": "Likes to show pictures of their pet squox."
+    },
+    {
+        "text": "Aspires to be a professional vidgamer."
+    },
+    {
+        "text": ""
+    }
+]
+
 }
