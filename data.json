@@ -1,181 +1,229 @@
 {
+  "ancestryWeights": [
+    { "value": "Human", "weight": 40 },
+    { "value": "Android", "weight": 10 },
+    { "value": "Ysoki", "weight": 10 },
+    { "value": "Lashunta", "weight": 7 },
+    { "value": "Shirren", "weight": 5 },
+    { "value": "Kasatha", "weight": 5 },
+    { "value": "Vesk", "weight": 5 },
+    { "value": "Dwarf", "weight": 4 },
+    { "value": "Halfling", "weight": 4 },
+    { "value": "Skittermander", "weight": 2 },
+    { "value": "Gnome", "weight": 1 },
+    { "value": "Nuar", "weight": 1 },
+    { "value": "Other", "weight": 6 }
+  ],
 
-    "ancestry": [
-        "Android",
-        "Astrazoan",
-        "Barathu",
-        "Contemplative",
-        "Dragonkin",
-        "Human",
-        "Ikeshti",
-        "Kalo",
-        "Kasatha",
-        "Lashunta",
-        "Pahtra",
-        "Sarcesian",
-        "Shirren",
-        "Shobhad",
-        "Skittermander",
-        "Vesk",
-        "Vlaka",
-        "Ysoki",
-        "Khizar"
-    ],
+  "otherAncestries": [
+    "Astrazoan", "Barathu", "Contemplative", "Dragonkin", "Ikeshti", "Kalo",
+    "Pahtra", "Sarcesian", "Shobhad", "Vlaka", "Khizar"
+  ],
 
-    "attitude": [
-        "Helpful",
-        "Friendly",
-        "Indifferent",
-        "Unfriendly"
-    ],
+  "attitude": [
+    { "value": "Helpful", "weight": 2 },
+    { "value": "Friendly", "weight": 6 },
+    { "value": "Indifferent", "weight": 8 },
+    { "value": "Unfriendly", "weight": 3 },
+    { "value": "Hostile", "weight": 1 }
+  ],
 
-    "detail": [
+  "detail": [
     {
-        "text": "Has malfunctioning {{link}}.",
-        "linkText": "moodskin",
-        "url": "https://2e.aonsrd.com/treasure/143-moodskin"
+      "text": "Has malfunctioning {{link}}.",
+      "linkText": "moodskin",
+      "url": "https://2e.aonsrd.com/treasure/143-moodskin"
     },
     {
-        "text": "Has more prosthetic limbs than real ones."
+      "text": "Has more prosthetic limbs than real ones."
     },
     {
-        "text": "Is covered in tattoos of city names from across the Pact Worlds."
+      "text": "Is covered in tattoos of city names from across the Pact Worlds."
     },
     {
-        "text": "Flaunts an entirely bedazzled outfit."
+      "text": "Flaunts an entirely bedazzled outfit."
     },
     {
-        "text": "Constantly fidgets."
+      "text": "Constantly fidgets."
     },
     {
-        "text": "Leans heavily on a rusty painglaive."
+      "text": "Leans heavily on a rusty painglaive."
     },
     {
-        "text": "Wears a frag grenade on a leather cord around their neck."
+      "text": "Wears a frag grenade on a leather cord around their neck."
     },
     {
-        "text": "Doesn't look up from their comm unit while speaking."
+      "text": "Doesn't look up from their comm unit while speaking."
     },
     {
-        "text": "Speaks with a thick Akitonian accent."
+      "text": "Speaks with a thick Akitonian accent."
     },
     {
-        "text": "Has a {{link}} embedded in the center of their forehead.",
-        "linkText": "laser eye",
-        "url": "https://2e.aonsrd.com/treasure/122"
+      "text": "Has a {{link}} embedded in the center of their forehead.",
+      "linkText": "laser eye",
+      "url": "https://2e.aonsrd.com/treasure/122"
     },
     {
-        "text": "Makes intense eye contact."
+      "text": "Makes intense eye contact."
     },
     {
-        "text": "Flips through a brochure for a beach resort on {{link}}.",
-        "linkText": "Varturan",
-        "url": "https://starfinderwiki.com/wiki/Varturan"
+      "text": "Flips through a brochure for a beach resort on {{link}}.",
+      "linkText": "Varturan",
+      "url": "https://starfinderwiki.com/wiki/Varturan"
     },
     {
-        "text": "Shouts over their loud music that they don't turn down."
+      "text": "Shouts over their loud music that they don't turn down."
     },
     {
-        "text": "Has a truly remarkable number of piercings."
+      "text": "Has a truly remarkable number of piercings."
     },
     {
-        "text": "Drinks from a mug that says, \"Don't talk to me until I've had my coffee\"."
+      "text": "Drinks from a mug that says, \"Don't talk to me until I've had my coffee\"."
     },
     {
-        "text": "Talks with their hands (or equivalent limbs)."
+      "text": "Talks with their hands (or equivalent limbs)."
     },
     {
-        "text": "Fiddles with a key ring filled with keys."
+      "text": "Fiddles with a key ring filled with keys."
     },
     {
-        "text": "Reeks of hyperleaf."
+      "text": "Reeks of hyperleaf."
     },
     {
-        "text": "Chews a big wad of bubblegum."
+      "text": "Chews a big wad of bubblegum."
     },
     {
-        "text": "Is a close-talker."
+      "text": "Is a close-talker."
     },
     {
-        "text": "Keeps checking their watch."
+      "text": "Keeps checking their watch."
     },
     {
-        "text": "Speaks and moves slowly, as if they're wading through molasses."
+      "text": "Speaks and moves slowly, as if they're wading through molasses."
     },
     {
-        "text": "Seems like they've seen some shit."
+      "text": "Seems like they've seen some shit."
     },
     {
-        "text": "Carries a worn book with dog-eared pages."
+      "text": "Carries a worn book with dog-eared pages."
     },
     {
-        "text": "Wears a baffling array of holy symbols."
+      "text": "Wears a baffling array of holy symbols."
     },
     {
-        "text": "Is really into Vesk metal."
+      "text": "Is really into Vesk metal."
     },
     {
-        "text": "Fears that everyone around them is slowly being replaced with reptoids."
+      "text": "Fears that everyone around them is slowly being replaced with reptoids."
     },
     {
-        "text": "Has recently been on a lot of unsuccessful first dates."
+      "text": "Has recently been on a lot of unsuccessful first dates."
     },
     {
-        "text": "Has a micromanaging boss."
+      "text": "Has a micromanaging boss."
     },
     {
-        "text": "Has a very large family."
+      "text": "Has a very large family."
     },
     {
-        "text": "Dreams of seeing a colossi on {{link}}.",
-        "linkText": "Daimalko",
-        "url": "https://www.aonsrd.com/Systems.aspx?ItemName=Daimalko"
+      "text": "Dreams of seeing a colossi on {{link}}.",
+      "linkText": "Daimalko",
+      "url": "https://www.aonsrd.com/Systems.aspx?ItemName=Daimalko"
     },
     {
-        "text": "Thinks they are a witchwarper."
+      "text": "Thinks they are a witchwarper."
     },
     {
-        "text": "Knows Kasathan battledancing."
+      "text": "Knows Kasathan battledancing."
     },
     {
-        "text": "Is stressed about their midterm exams."
+      "text": "Is stressed about their midterm exams."
     },
     {
-        "text": "Is in a petty squabble with their neighbor."
+      "text": "Is in a petty squabble with their neighbor."
     },
     {
-        "text": "Has a weakness for greasy diner food."
+      "text": "Has a weakness for greasy diner food."
     },
     {
-        "text": "Thinks they are being watched."
+      "text": "Thinks they are being followed by an {{link}}.",
+      "linkText": "Eyeswide Agency headscanner",
+      "url": "https://2e.aonsrd.com/factions/11-eyeswide-agency"
     },
     {
-        "text": "Is very blunt."
+      "text": "Is very blunt."
     },
     {
-        "text": "Has gorgeous eyes."
+      "text": "Has gorgeous eyes."
     },
     {
-        "text": "Has an overbearing parent."
+      "text": "Has an overbearing parent."
     },
     {
-        "text": "Has a giant tattoo of a void dragon."
+      "text": "Has a giant tattoo of a void dragon."
     },
     {
-        "text": "Has a booming voice."
+      "text": "Has a booming voice."
     },
     {
-        "text": "Is very sleepy."
+      "text": "Is very sleepy."
     },
     {
-        "text": "Likes to show pictures of their pet squox."
+      "text": "Likes to show pictures of their pet squox."
     },
     {
-        "text": "Aspires to be a professional vidgamer."
+      "text": "Aspires to be a professional vidgamer."
     },
     {
-        "text": ""
+      "text": "Is a huge brutaris fan."
+    },
+    {
+      "text": "Bets on vithrar drone racing, a popular sport on Verces where people race drones at the speed of thought."
+    },
+    {
+      "text": "Just wants to go home."
+    },
+    {
+      "text": "Has tickets for an upcoming Strawberry Machine Cake concert."
+    },
+    {
+      "text": "Just submitted their audition vid for Zo!'s latest reality program."
+    },
+    {
+      "text": "Is working on a pre-Gap historical romance novel."
+    },
+    {
+      "text": "Can quote every line from Freedom and Fire, a Pact Worlds period drama about a dragonkin-android bonded pair."
+    },
+    {
+      "text": "Is days away from retirement."
+    },
+    {
+      "text": "Genuinely loves their job."
+    },
+    {
+      "text": "Tinkers with old scrap in their spare time."
+    },
+    {
+      "text": "Has a kid who's obsessed with the children's cartoon Nufriend Yufriend."
+    },
+    {
+      "text": "Has a massive sweet tooth."
+    },
+    {
+      "text": "Doesn't like nature."
+    },
+    {
+      "text": "Had too much to drink last night."
+    },
+    {
+      "text": "Lives for juicy gossip."
+    },
+    {
+      "text": "Tracks all the Infosphere rumors about the Ghost Levels."
+    },
+    {
+      "text": "Collects aucturnite."
     }
-]
-
+  ]
 }
