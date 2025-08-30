@@ -1,23 +1,32 @@
 {
   "ancestryWeights": [
-    { "value": "Human", "weight": 40 },
-    { "value": "Android", "weight": 10 },
-    { "value": "Ysoki", "weight": 10 },
-    { "value": "Lashunta", "weight": 7 },
-    { "value": "Shirren", "weight": 5 },
-    { "value": "Kasatha", "weight": 5 },
-    { "value": "Vesk", "weight": 5 },
-    { "value": "Dwarf", "weight": 4 },
-    { "value": "Halfling", "weight": 4 },
-    { "value": "Skittermander", "weight": 2 },
-    { "value": "Gnome", "weight": 1 },
+    { "value": "Human", "weight": 40, "url": "https://2e.aonsrd.com/ancestries/9-human" },
+    { "value": "Android", "weight": 10, "url": "https://2e.aonsrd.com/ancestries/7-android" },
+    { "value": "Ysoki", "weight": 10, "url": "https://2e.aonsrd.com/ancestries/16-ysoki" },
+    { "value": "Lashunta", "weight": 7, "url": "https://2e.aonsrd.com/ancestries/11-lashunta" },
+    { "value": "Shirren", "weight": 5, "url": "https://2e.aonsrd.com/ancestries/13-shirren" },
+    { "value": "Kasatha", "weight": 5, "url": "https://2e.aonsrd.com/ancestries/10-kasatha" },
+    { "value": "Vesk", "weight": 5, "url": "https://2e.aonsrd.com/ancestries/15-vesk" },
+    { "value": "Dwarf", "weight": 4, "url": "https://2e.aonprd.com/Ancestries.aspx?ID=59" },
+    { "value": "Halfling", "weight": 4, "url": "https://2e.aonprd.com/Ancestries.aspx?ID=63" },
+    { "value": "Skittermander", "weight": 2, "url": "https://2e.aonsrd.com/ancestries/14-skittermander" },
+    { "value": "Gnome", "weight": 1, "url": "https://2e.aonprd.com/Ancestries.aspx?ID=61" },
     { "value": "Nuar", "weight": 1 },
     { "value": "Other", "weight": 6 }
   ],
 
   "otherAncestries": [
-    "Astrazoan", "Barathu", "Contemplative", "Dragonkin", "Ikeshti", "Kalo",
-    "Pahtra", "Sarcesian", "Shobhad", "Vlaka", "Khizar"
+    { "value": "Astrazoan", "url": "https://2e.aonsrd.com/Ancestries/18-astrazoan" },
+    { "value": "Barathu", "url": "https://2e.aonsrd.com/ancestries/8-barathu"},
+    { "value": "Contemplative", "url": "https://2e.aonsrd.com/ancestries/2-contemplative"},
+    { "value": "Dragonkin", "url": "https://2e.aonsrd.com/ancestries/3-dragonkin"},
+    { "value": "Ikeshti", "url": "https://2e.aonsrd.com/ancestries/19-ikeshti"},
+    { "value": "Kalo", "url": "https://2e.aonsrd.com/ancestries/4-kalo"},
+    { "value": "Khizar", "url": "https://2e.aonsrd.com/ancestries/21-khizar"},
+    { "value": "Pahtra", "url": "https://2e.aonsrd.com/ancestries/12-pahtra"},
+    { "value": "Sarcesian", "url": "https://2e.aonsrd.com/ancestries/5-sarcesian"},
+    { "value": "Shobhad", "url": "https://2e.aonsrd.com/ancestries/20-shobhad"},
+    { "value": "Vlaka", "url": "https://2e.aonsrd.com/ancestries/6-vlaka"}
   ],
 
   "attitude": [
@@ -224,6 +233,12 @@
     },
     {
       "text": "Collects aucturnite."
+    },
+    {
+      "text": "Is easily surprised."
+    },
+    {
+      "text": "Has an impressive collection of graphic tees."
     }
   ]
 }
