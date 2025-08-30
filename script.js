@@ -10,11 +10,10 @@ let data = {
   detail: []
 };
 
+// Load JSON data and add event listener once loaded
 fetch('data.json')
   .then(response => {
-    if (!response.ok) {
-      throw new Error('Failed to load data');
-    }
+    if (!response.ok) throw new Error('Failed to load data');
     return response.json();
   })
   .then(jsonData => {
@@ -23,7 +22,29 @@ fetch('data.json')
   })
   .catch(error => console.error(error));
 
-function weightedRandomPick(items) {
+// Weighted random pick returning the whole object
+function weightedRandomPickObject(items) {
+  const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
+  let randomNum = Math.random() * totalWeight;
+  for (const item of items) {
+    if (randomNum < item.weight) return item;
+    randomNum -= item.weight;
+  }
+}
+
+// Pick ancestry object: main list or "otherAncestries"
+function pickAncestry() {
+  const pick = weightedRandomPickObject(data.ancestryWeights);
+  if (pick.value === "Other") {
+    // Pick a random other ancestry object
+    const idx = Math.floor(Math.random() * data.otherAncestries.length);
+    return data.otherAncestries[idx];
+  }
+  return pick;
+}
+
+// Pick attitude string from weighted array
+function weightedRandomPickValue(items) {
   const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
   let randomNum = Math.random() * totalWeight;
   for (const item of items) {
@@ -32,46 +53,34 @@ function weightedRandomPick(items) {
   }
 }
 
-function pickAncestry() {
-  const pick = weightedRandomPick(data.ancestryWeights);
-  if (pick === "Other") {
-    const idx = Math.floor(Math.random() * data.otherAncestries.length);
-    return data.otherAncestries[idx];
-  }
-  return pick;
-}
-
-function weightedRandomPickFromObjects(arr) {
-  const totalWeight = arr.reduce((sum, item) => sum + item.weight, 0);
-  let randomNum = Math.random() * totalWeight;
-  for (const item of arr) {
-    if (randomNum < item.weight) return item.value;
-    randomNum -= item.weight;
-  }
-}
-
 function generateNPC() {
-  // Ancestry
+  // Pick ancestry object (may have url)
   const ancestry = pickAncestry();
 
-  // Attitude
-  const attitude = weightedRandomPickFromObjects(data.attitude);
+  // Pick attitude string
+  const attitude = weightedRandomPickValue(data.attitude);
 
-  // Detail
+  // Pick random detail object
   const detailIndex = Math.floor(Math.random() * data.detail.length);
   const detailItem = data.detail[detailIndex];
 
-  // Prepare detail text with optional link
+  // Prepare detail text with optional link replacement
   let detailText = detailItem.text;
   if (detailItem.linkText && detailItem.url) {
-    // Replace {{link}} placeholder with anchor tag
     detailText = detailText.replace(
       '{{link}}',
       `<a href="${detailItem.url}" target="_blank" rel="noopener noreferrer">${detailItem.linkText}</a>`
     );
   }
 
-  ancestryDiv.innerHTML = `Ancestry: ${ancestry}`;
+  // Render ancestry (linked if URL exists)
+  if (ancestry.url) {
+    ancestryDiv.innerHTML = `Ancestry: <a href="${ancestry.url}" target="_blank" rel="noopener noreferrer">${ancestry.value}</a>`;
+  } else {
+    ancestryDiv.textContent = `Ancestry: ${ancestry.value}`;
+  }
+
+  // Render attitude and detail
   attitudeDiv.textContent = `Attitude: ${attitude}`;
   detailDiv.innerHTML = `Detail: ${detailText}`;
 }
