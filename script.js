@@ -10,7 +10,7 @@ let data = {
   detail: []
 };
 
-// Load JSON data and add event listener once loaded
+// Load data from JSON
 fetch('data.json')
   .then(response => {
     if (!response.ok) throw new Error('Failed to load data');
@@ -22,7 +22,7 @@ fetch('data.json')
   })
   .catch(error => console.error(error));
 
-// Weighted random pick returning the whole object
+// Utility: weighted random pick returning the full object
 function weightedRandomPickObject(items) {
   const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
   let randomNum = Math.random() * totalWeight;
@@ -32,18 +32,17 @@ function weightedRandomPickObject(items) {
   }
 }
 
-// Pick ancestry object: main list or "otherAncestries"
+// Utility: pick from main or "otherAncestries"
 function pickAncestry() {
   const pick = weightedRandomPickObject(data.ancestryWeights);
   if (pick.value === "Other") {
-    // Pick a random other ancestry object
     const idx = Math.floor(Math.random() * data.otherAncestries.length);
     return data.otherAncestries[idx];
   }
   return pick;
 }
 
-// Pick attitude string from weighted array
+// Utility: pick weighted attitude string
 function weightedRandomPickValue(items) {
   const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
   let randomNum = Math.random() * totalWeight;
@@ -53,18 +52,13 @@ function weightedRandomPickValue(items) {
   }
 }
 
+// Generate and render NPC data
 function generateNPC() {
-  // Pick ancestry object (may have url)
   const ancestry = pickAncestry();
-
-  // Pick attitude string
   const attitude = weightedRandomPickValue(data.attitude);
+  const detailItem = data.detail[Math.floor(Math.random() * data.detail.length)];
 
-  // Pick random detail object
-  const detailIndex = Math.floor(Math.random() * data.detail.length);
-  const detailItem = data.detail[detailIndex];
-
-  // Prepare detail text with optional link replacement
+  // Prepare detail string (with link, if any)
   let detailText = detailItem.text;
   if (detailItem.linkText && detailItem.url) {
     detailText = detailText.replace(
@@ -73,14 +67,14 @@ function generateNPC() {
     );
   }
 
-  // Render ancestry (linked if URL exists)
+  // Render ancestry
   if (ancestry.url) {
-    ancestryDiv.innerHTML = `Ancestry: <a href="${ancestry.url}" target="_blank" rel="noopener noreferrer">${ancestry.value}</a>`;
+    ancestryDiv.innerHTML = `<strong>Ancestry:</strong> <a href="${ancestry.url}" target="_blank" rel="noopener noreferrer">${ancestry.value}</a>`;
   } else {
-    ancestryDiv.textContent = `Ancestry: ${ancestry.value}`;
+    ancestryDiv.innerHTML = `<strong>Ancestry:</strong> ${ancestry.value}`;
   }
 
   // Render attitude and detail
-  attitudeDiv.textContent = `Attitude: ${attitude}`;
-  detailDiv.innerHTML = `Detail: ${detailText}`;
+  attitudeDiv.innerHTML = `<strong>Attitude:</strong> ${attitude}`;
+  detailDiv.innerHTML = `<strong>Detail:</strong> ${detailText}`;
 }
