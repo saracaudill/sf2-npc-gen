@@ -239,6 +239,17 @@
     },
     {
       "text": "Has an impressive collection of graphic tees."
+    },
+    {
+      "text": "Looks like they'd recently been in a fight."
+    },
+    {
+      "text": "Smells really nice."
+    },
+    {
+      "text": "Has a pet {{link}} sleeping on their shoulder.",
+      "linkText": "proog",
+      "url": "https://www.aonsrd.com/AlienDisplay.aspx?ItemName=Proog&Family=None"
     }
   ]
 }
