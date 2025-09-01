@@ -2,6 +2,7 @@
   --color-neon: #04d9ff;
   --color-highlight: #0437F2;
   --color-bg: #000080;
+  --color-hyperlink: #9FDAE5;
 }
 
 *,
@@ -20,6 +21,20 @@ body {
     var(--color-bg) 30%,
     #000016 100%
   );
+}
+
+a {
+    color: var(--color-neon);
+    text-decoration: none;
+    border-bottom: .0625em dashed var(--color-neon);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-hyperlink);
+    border-bottom-color: var(--color-hyperlink);
+    outline: none;
 }
 
 .container {
