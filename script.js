@@ -78,3 +78,32 @@ function generateNPC() {
   attitudeDiv.innerHTML = `<strong>Attitude:</strong> ${attitude}`;
   detailDiv.innerHTML = `<strong>Detail:</strong> ${detailText}`;
 }
+
+// === Community Use Policy Modal Logic ===
+
+const modal = document.getElementById("cup-modal");
+const link = document.getElementById("cup-link");
+const closeBtn = document.getElementById("close-cup-modal");
+
+if (modal && link && closeBtn) {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  });
+}

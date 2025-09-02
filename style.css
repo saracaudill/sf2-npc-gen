@@ -12,15 +12,69 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
-  display: grid;
-  place-items: center;
   background: radial-gradient(
     circle at center,
     var(--color-bg) 30%,
     #000016 100%
   );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 100ch;
+  margin: 1em auto;
+  margin-top: 1.25em;
+  padding: 0 1em;
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  color: var(--color-neon);
+}
+
+header h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+  color: var(--color-neon);
+  opacity: 0.7;
+  font-family: 'Audiowide', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+ul li a {
+  color: var(--color-neon);
+  text-decoration: none;
+  border-bottom: 1px none transparent;
+  padding: 0.25em;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+ul li a:hover,
+ul li a:focus {
+  opacity: 1;
+  border-bottom-color: var(--color-neon);
+}
+
+.main-content {
+    padding-top: 16vh;
+    padding-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -169,4 +223,56 @@ a:focus {
   box-shadow:
     inset 0 0 0.5em 0 var(--color-highlight),
     0 0 0.2em 0 #01395d;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(.1875em);
+}
+
+.modal-content {
+  background-color: #000022;
+  margin: 10% auto;
+  padding: 2em;
+  border: 1px solid var(--color-neon);
+  width: 80%;
+  max-width: 600px;
+  color: white;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em var(--color-neon);
+}
+
+.modal-content a {
+  color: var(--color-neon);
+  border-bottom: none;
+}
+
+.modal-content a:hover {
+  color: var(--color-hyperlink);
+}
+
+.close {
+  color: var(--color-neon);
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -1em;
+  margin-right: -1em;
+}
+
+.close:hover {
+  color: var(--color-hyperlink);
 }
