@@ -32,20 +32,34 @@
   </div>
 </main>
 
-<div id="cup-modal" class="modal">
+<!-- add paizo community use policy modal -->
+
+<div
+  id="cup-modal"
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cup-modal-title"
+  aria-hidden="true"
+>
   <div class="modal-content">
-    <span class="close" id="close-cup-modal">&times;</span>
+    <h2 id="cup-modal-title">Community Use Policy</h2>
+
+    <button class="close" id="close-cup-modal" aria-label="Close modal">&times;</button>
+
     <p>
       This web tool uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's 
       <a href="https://paizo.com/communityuse" target="_blank" rel="noopener noreferrer">
         Community Use Policy
       </a>. We are expressly prohibited from charging you to use or access this content. This web tool is not 
       published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and 
-      Paizo products, visit <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.
+      Paizo products, visit 
+      <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.
     </p>
   </div>
 </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
