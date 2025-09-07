@@ -2,7 +2,7 @@
 
 ## Overview
 
-This random text generator uses JavaScript arrays to return characteristics for describing Starfinder Second Edition NPCs.
+This random text generator uses JavaScript arrays to return basic characteristics for Starfinder Second Edition NPCs.
 
 ## Installation
 
