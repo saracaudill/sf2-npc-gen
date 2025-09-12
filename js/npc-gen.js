@@ -18,13 +18,14 @@ function weightedRandomPickValue(items) {
 
 function pickAncestry(data) {
   const pick = weightedRandomPickObject(data.ancestryWeights);
-  if (pick.value === "Other") {
+  if (pick.value === 'Other') {
     const idx = Math.floor(Math.random() * data.otherAncestries.length);
     return data.otherAncestries[idx];
   }
   return pick;
 }
 
+/* @saracaudill: I would love to know your reasoning in exporting only this function and not the others in this file. */
 export function generateNPC(data) {
   const ancestryDiv = document.getElementById('gen-ancestry');
   const attitudeDiv = document.getElementById('gen-attitude');
@@ -32,7 +33,8 @@ export function generateNPC(data) {
 
   const ancestry = pickAncestry(data);
   const attitude = weightedRandomPickValue(data.attitude);
-  const detailItem = data.detail[Math.floor(Math.random() * data.detail.length)];
+  const detailItem =
+    data.detail[Math.floor(Math.random() * data.detail.length)];
 
   let detailText = detailItem.text;
   if (detailItem.linkText && detailItem.url) {
